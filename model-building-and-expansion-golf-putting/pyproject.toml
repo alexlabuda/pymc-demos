@@ -1,0 +1,30 @@
+[project]
+name = "model-building-and-expansion-golf-putting"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "alexlabuda",email = "alexlabuda@gmail.com"}
+]
+readme = "README.md"
+requires-python = "3.10.9"
+dependencies = [
+    "xarray==2023.1.0",
+    "arviz==0.14.0",
+    "numpy==1.24.1",
+    "matplotlib==3.6.3",
+    "pymc==5.0.1",
+    "scipy==1.10.0",
+    "pandas==1.5.3",
+    "pytensor==2.8.11"
+]
+
+[tool.poetry]
+packages = [{include = "model_building_and_expansion_golf_putting", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
